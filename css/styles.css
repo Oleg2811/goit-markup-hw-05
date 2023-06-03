@@ -134,12 +134,12 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--dark);
-  position: relative;
+  /* position: relative; */
   transition: color var(--overlay-on-page);
 }
 
 .address .link {
-  /* display: block; */
+  display: block;
   font-style: normal;
   font-size: 16px;
   line-height: 1.5;
@@ -154,9 +154,10 @@ img {
 .address .link:focus {
   color: var(--press-state);
 }
-.current {
+.menu .current {
   position: relative;
   color: #404bbf;
+
 }
 
 .current::after {
@@ -165,7 +166,7 @@ img {
   left: 0;
   bottom: -1px;
   height: 4px;
-  background-color: #404bbf;
+  background-color: var(--press-state);
   border-radius: 2px;
   width: 100%;
   height: 4px;
